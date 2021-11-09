@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    font-family: "標楷體";
+    overflow: hidden;
+    border: 1px solid #000;
+}
+.main{
+    display: flex;
+    width: 1024px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body>*:not(aside,section),aside>*,section>*
+{
+    border: 1px solid red;
+}
+
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+}
+
+.aside{
+    width: 215px;
+    height: calc(768px - 65px - 20px);
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    flex-basis: calc(100% - 25px);
+}
+
+.aside-menu-header{
+color:#FF00FF;
+font-size: 24px;
+text-decoration: underline;
+/* text-align: center; */
+/* font-weight: 500; */
+/* margin-bottom: 20px; */
+}
+
+.aside>nav>a{
+    color:black;
+    background: url(./images/menu1.png);
+    display: block;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    
+}
+
+#myLink{
+    text-decoration: underline;
+}
+
+.aside>nav>a:hover{
+    background: url(./images/menu2.png);
+}
+
+.update{
+    flex-basis: 25px;
+    font-family: "標楷體";
+    color: #000000;
+    text-align: center;
+}
+
+.section{
+flex-basis: calc(1000 -215px);
+}
+.marquee{
+flex-basis: 29px;
+width: 770px;
+font-family: "標楷體";
+font-size: 24px;
+color: #0000FF;
+}
+.content
+{fb:calc}
+.footer
+{}
+
